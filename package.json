@@ -1,7 +1,7 @@
 {
   "name": "pilot",
   "version": "0.1.0",
-  "description": "icapps React(Native) components.",
+  "description": "icapps React Native components.",
   "engines": {
     "node": ">=4.0.0",
     "npm": "5.4.x",
