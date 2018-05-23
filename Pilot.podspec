@@ -20,7 +20,7 @@ podspec = Pod::Spec.new do |s|
   s.source         = { :git => 'https://github.com/icapps/pilot.git' }
   s.platform       = :ios, '10.0'
   s.requires_arc   = true
-  s.source_files   = 'ios/Pilot/**/*.{h,m}'
+  # s.source_files   = 'ios/Pilot/**/*.{h,m}'
 
   # React
   s.dependency 'React/Core', react_native_version
@@ -39,6 +39,13 @@ podspec = Pod::Spec.new do |s|
     'node_modules/react-native/third-party-podspecs/Folly.podspec',
     'node_modules/react-native/third-party-podspecs/glog.podspec'
   ]
+
+  s.subspec "Share" do |ss|
+    ss.source_files         = "ios/Pilot/Share/**/*.{h,m}"
+    ss.header_dir           = "React"
+    ss.libraries            = "stdc++"
+  end
+
   podspecs.each do |podspec_path|
     spec = Pod::Specification.from_file podspec_path
     s.dependency spec.name, "#{spec.version}"
