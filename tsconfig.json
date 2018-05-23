@@ -25,10 +25,6 @@
       ]
     }
   },
-  "exclude": [
-    "node_modules",
-    "**/*.test.ts",
-    "build"
-  ]
+  "include": [ "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [ "node_modules", "**/*.test.ts", "build"]
 }
-
