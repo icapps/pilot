@@ -16,7 +16,9 @@
     "prettier-project": "yarn run prettier-write 'src/**/*.{ts,tsx}'",
     "ci": "yarn type-check && yarn lint && yarn prettier-project -l",
     "test": "jest",
-    "test:ci": "jest --outputFile test-results.json --json --runInBand"
+    "test:ci": "jest --outputFile test-results.json --json --runInBand",
+    "postinstall": "prettier --write package.json",
+    "prepare": "patch-package"
   },
   "repository": {
     "type": "git",
@@ -43,6 +45,7 @@
     "jest": "^22.4.2",
     "jest-styled-components": "^4.10.0",
     "lint-staged": "^6.0.0",
+    "patch-package": "^5.1.1",
     "prettier": "^1.12.1",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
