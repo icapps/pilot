@@ -12,7 +12,7 @@ glog_spec_path = File.join(react_path, 'third-party-podspecs/glog.podspec')
 double_conversion_spec_path = File.join(react_path, 'third-party-podspecs/DoubleConversion.podspec')
 
 target 'Example' do
-  pod 'Pilot', :path => '../', :inhibit_warnings => false
+  pod 'Pilot/Share', :path => '../', :inhibit_warnings => false
 
   # As this runs dev, we need the developer web socket
   pod 'React', :path => react_path, :subspecs => %w(DevSupport)
@@ -20,7 +20,6 @@ target 'Example' do
   pod 'Folly', :podspec => folly_spec_path
   pod 'DoubleConversion', :podspec => double_conversion_spec_path
   pod 'glog', :podspec => glog_spec_path
-
 end
 
 plugin 'cocoapods-fix-react-native'

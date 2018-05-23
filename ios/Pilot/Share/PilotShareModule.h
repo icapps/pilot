@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <React/RCTBridgeModule.h>
 
-@interface PilotShareModule : NSObject
+@interface PilotShareModule : NSObject <RCTBridgeModule>
 
 @end

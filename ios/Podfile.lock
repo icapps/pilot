@@ -6,7 +6,7 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.4)
-  - Pilot (0.1.0):
+  - Pilot/Share (0.1.0):
     - DoubleConversion (= 1.1.5)
     - Folly (= 2016.09.26.00)
     - glog (= 0.3.4)
@@ -65,7 +65,7 @@ DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
-  - Pilot (from `../`)
+  - Pilot/Share (from `../`)
   - React/DevSupport (from `../node_modules/react-native`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -92,10 +92,10 @@ SPEC CHECKSUMS:
   DoubleConversion: e22e0762848812a87afd67ffda3998d9ef29170c
   Folly: 211775e49d8da0ca658aebc8eab89d642935755c
   glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
-  Pilot: 13c58755573abf9ae4ead82140f1b0725be853c2
+  Pilot: d6377563cb656839327657d81abd8d1ff0736db1
   React: aa2040dbb6f317b95314968021bd2888816e03d5
   yoga: a23273df0088bf7f2bb7e5d7b00044ea57a2a54a
 
-PODFILE CHECKSUM: 567be1c5670e30144149261ba4b419af2e226b5f
+PODFILE CHECKSUM: adf9f0c0fc6f47e9d3cb35da7564c787a9cd7707
 
 COCOAPODS: 1.5.2
