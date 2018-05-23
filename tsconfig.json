@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "module": "es6",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "build",
+    "plugins": [{ "name": "typescript-styled-plugin" }],
+    "pretty": true,
+    "strictNullChecks": false,
+    "target": "es6",
+    "types": ["jest", "react", "react-native"],
+    "noEmit": true, 
+    "typeRoots": ["node_modules/@types"],
+    "skipLibCheck": true,
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "types/*"
+      ]
+    }
+  },
+  "include": [ "src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [ "node_modules", "**/*.test.ts", "build"]
+}

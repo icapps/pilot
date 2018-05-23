@@ -2,9 +2,23 @@
   "name": "pilot",
   "version": "0.1.0",
   "description": "icapps React(Native) components.",
-  "main": "pilot.js",
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": "5.4.x",
+    "yarn": "1.x"
+  },
+  "main": "build/pilot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "type-check": "tsc --noEmit --pretty",
+    "lint": "tslint 'src/**/*.{ts,tsx}'",
+    "lint-fix": "lint -- --fix",
+    "prettier-write": "prettier --write",
+    "prettier-project": "yarn run prettier-write 'src/**/*.{ts,tsx}'",
+    "ci": "yarn type-check && yarn lint && yarn prettier-project -l",
+    "test": "jest",
+    "test:ci": "jest --outputFile test-results.json --json --runInBand",
+    "postinstall": "prettier --write package.json",
+    "prepare": "patch-package"
   },
   "repository": {
     "type": "git",
@@ -25,6 +39,25 @@
   },
   "homepage": "https://github.com/icapps/pilot#readme",
   "devDependencies": {
-    "typescript": "^2.8.3"
+    "@types/jest": "^22.1.1",
+    "@types/react": "^16.3.14",
+    "@types/react-native": "^0.55.15",
+    "jest": "^22.4.2",
+    "jest-styled-components": "^4.10.0",
+    "lint-staged": "^6.0.0",
+    "patch-package": "^5.1.1",
+    "prettier": "^1.12.1",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-processor-styled-components": "^1.2.2",
+    "ts-jest": "^22.0.2",
+    "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.6.0",
+    "typescript": "^2.8.1",
+    "typescript-styled-plugin": "^0.1.2"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-native": "^0.55.4"
   }
 }
