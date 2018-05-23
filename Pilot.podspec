@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.module_name  = 'Pilot'
 
-  s.source       = { :git => "https://github.com/icapps/pilot.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/icapps/pilot.git" }
   s.source_files  = "ios/**/*.{h,m}"
 
   s.dependency 'React'
