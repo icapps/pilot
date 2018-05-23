@@ -1,0 +1,30 @@
+{
+  "name": "pilot",
+  "version": "0.1.0",
+  "description": "icapps React(Native) components.",
+  "main": "pilot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icapps/pilot.git"
+  },
+  "keywords": [
+    "pilot",
+    "react",
+    "react-native",
+    "ios",
+    "android",
+    "components"
+  ],
+  "author": "Dylan Gyesbreghs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icapps/pilot/issues"
+  },
+  "homepage": "https://github.com/icapps/pilot#readme",
+  "devDependencies": {
+    "typescript": "^2.8.3"
+  }
+}
