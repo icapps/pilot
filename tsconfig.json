@@ -5,7 +5,7 @@
     "baseUrl": "src",
     "experimentalDecorators": true,
     "jsx": "react",
-    "module": "es2015",
+    "module": "es6",
     "moduleResolution": "node",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -15,17 +15,20 @@
     "strictNullChecks": false,
     "target": "es6",
     "types": ["jest", "react", "react-native"],
-    "noEmit": true
+    "noEmit": true, 
+    "typeRoots": ["node_modules/@types"],
+    "skipLibCheck": true,
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "types/*"
+      ]
+    }
   },
-  "include": ["typings/*.d.ts", "src/**/*.ts", "src/**/*.tsx"],
   "exclude": [
     "node_modules",
-    "Pod/Assets",
-    "Example/Build",
-    "externals",
-    "build",
-    "index.ios.js",
-    "index.android.js",
-    "**/__mocks__"
+    "**/*.test.ts",
+    "build"
   ]
 }
+

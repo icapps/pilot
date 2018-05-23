@@ -6,7 +6,6 @@
     "max-classes-per-file": [false],
     "member-access": [false, "check-accessor", "check-constructor"],
     "no-console": [true, ["error", ["warn", "error"]]],
-    "no-unused-variable": [true, { "ignore-pattern": "^_" }],
     "object-literal-sort-keys": false,
     "ordered-imports": true,
     "switch-default": false,
