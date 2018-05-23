@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "icapps React(Native) components.",
   "engines": {
-    "node": "8.4.x",
     "npm": "5.4.x",
     "yarn": "1.x"
   },
@@ -37,6 +36,8 @@
   "devDependencies": {
     "typescript": "^2.8.3",
     "typescript-styled-plugin": "^0.6.3"
+  },
+  "dependencies": {
+    "react-native": "^0.55.4"
   }
 }
-
