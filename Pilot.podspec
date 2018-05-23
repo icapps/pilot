@@ -10,7 +10,7 @@ pilot_version = pkg_version.call
 react_native_version = pkg_version.call('node_modules/react-native')
 
 podspec = Pod::Spec.new do |s|
-  s.name           = 'Emission'
+  s.name           = 'Pilot'
   s.version        = pilot_version
   s.summary        = 'React Native Components used by icapps.'
   s.homepage       = 'https://github.com/icapps/pilot'
