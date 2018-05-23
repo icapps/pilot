@@ -1,0 +1,57 @@
+{
+  "name": "Pilot",
+  "version": "0.1.0",
+  "summary": "React Native Components used by icapps.",
+  "homepage": "https://github.com/icapps/pilot",
+  "license": "MIT",
+  "authors": {
+    "Dylan Gyesbreghs": "dgyesbreghs@gmail.com",
+    "Koen Van Looveren": "koen.vanlooveren@icapps.com"
+  },
+  "source": {
+    "git": "https://github.com/icapps/pilot.git"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "requires_arc": true,
+  "source_files": "ios/Pilot/**/*.{h,m}",
+  "dependencies": {
+    "React/Core": [
+      "0.55.4"
+    ],
+    "React/CxxBridge": [
+      "0.55.4"
+    ],
+    "React/RCTAnimation": [
+      "0.55.4"
+    ],
+    "React/RCTCameraRoll": [
+      "0.55.4"
+    ],
+    "React/RCTImage": [
+      "0.55.4"
+    ],
+    "React/RCTLinkingIOS": [
+      "0.55.4"
+    ],
+    "React/RCTNetwork": [
+      "0.55.4"
+    ],
+    "React/RCTText": [
+      "0.55.4"
+    ],
+    "yoga": [
+      "0.55.4.React"
+    ],
+    "DoubleConversion": [
+      "1.1.5"
+    ],
+    "Folly": [
+      "2016.09.26.00"
+    ],
+    "glog": [
+      "0.3.4"
+    ]
+  }
+}
