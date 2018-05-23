@@ -2,9 +2,19 @@
   "name": "pilot",
   "version": "0.1.0",
   "description": "icapps React(Native) components.",
+  "engines": {
+    "node": "8.4.x",
+    "npm": "5.4.x",
+    "yarn": "1.x"
+  },
   "main": "src/pilot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "type-check": "tsc --noEmit --pretty",
+    "lint": "tslint 'src/**/*.{ts,tsx}'",
+    "lint-fix": "lint -- --fix",
+    "prettier-write": "prettier --write",
+    "ci": "yarn type-check && yarn lint && yarn prettier-project -l && yarn test:ci",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -29,3 +39,4 @@
     "typescript-styled-plugin": "^0.6.3"
   }
 }
+
